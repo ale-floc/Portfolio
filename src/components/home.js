@@ -6,13 +6,13 @@ import { ReactSVG } from 'react-svg'
 import { DownOutlined } from '@ant-design/icons';
 import { Link, animateScroll } from 'react-scroll';
 
-const About = ({ language, scroll }) => (
+const Home = ({ language, scroll }) => (
   <div id="home" className="container">
     <div className="banner">
       <h1>{translation[language].banner}</h1>
       <h3>{translation[language].description}</h3>
     </div>
-    <a href="https://drive.google.com/file/d/1ixQ4HLQk9MSqU3q9APNjNhCyehA8M2xM/view?usp=sharing" rel="noopener noreferrer" target="_blank">
+    <a href="https://drive.google.com/file/d/1kxHVv8Ha2itdCxSksbveURUFErHr_XLn/view?usp=sharing" rel="noopener noreferrer" target="_blank">
       <input type="button" value={translation[language].resume} />
     </a>
     <div className={classNames('container-earth', { displayNone: scroll > 450 })} style={{ transform: `translateY(calc(100px + ${scroll * 2}px))` }}>
@@ -26,4 +26,4 @@ const About = ({ language, scroll }) => (
   </div>
 );
 
-export default About;
+export default Home;
