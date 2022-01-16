@@ -25,10 +25,12 @@ import illustrator from '../assets/img/skills/illustrator.svg';
 import photoshop from '../assets/img/skills/photoshop.svg';
 import webpack from '../assets/img/skills/webpack.svg';
 import cordova from '../assets/img/skills/cordova.svg';
-import redis from '../assets/img/skills/redis.svg';
+import ec2 from '../assets/img/skills/ec2.svg';
+import s3 from '../assets/img/skills/s3.svg';
+import jenkins from '../assets/img/skills/jenkins.png';
 import SkillsItem from './skillsItem';
 
-const Skills = ({ language }) => (
+const Skills = React.memo(({ language }) => (
     <div id="skills" className="container">
         <h2 className="title" >{translation[language].skills}</h2>
         <div className="container-skills">
@@ -45,7 +47,6 @@ const Skills = ({ language }) => (
                     <SkillsItem id="rails" src={rails} title="Rails" />
                     <SkillsItem id="php" src={php} title="PHP" />
                     <SkillsItem id="mongodb" src={mongodb} title="MongoDB" />
-                    <SkillsItem id="redis" src={redis} title="redis" />
                     <SkillsItem id="mysql" src={mysql} title="MYSQL" />
                     <SkillsItem id="cordova" src={cordova} title="Cordova" />
                     <SkillsItem id="bootstrap" src={bootstrap} title="Bootstrap" />
@@ -61,15 +62,18 @@ const Skills = ({ language }) => (
                     <SkillsItem id="iterm" src={iterm} title="Iterm 2" />
                     <SkillsItem id="git" src={git} title="Git" />
                     <SkillsItem id="docker" src={docker} title="Docker" />
+                    <SkillsItem id="jenkins" src={jenkins} title="Jenkins" />
                     <SkillsItem id="postman" src={postman} title="Postman" />
                     <SkillsItem id="illustrator" src={illustrator} title="Illustrator" />
                     <SkillsItem id="photoshop" src={photoshop} title="Photoshop" />
                     <SkillsItem id="afterEffect" src={afterEffect} title="After Effect" />
                     <SkillsItem id="premierePro" src={premierePro} title="Premiere Pro" />
+                    <SkillsItem id="ec2" src={ec2} title="EC2" />
+                    <SkillsItem id="s3" src={s3} title="S3" />
                 </div>
             </div>
         </div>
     </div>
-);
+));
 
 export default Skills;
