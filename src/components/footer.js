@@ -23,7 +23,7 @@ const Footer = () => (
 				</a>
 			</div>
 			<div className="copyright">
-				ARNAUD LE FLOCH © 2021
+				ARNAUD LE FLOCH © {new Date().getFullYear()}
       		</div>
 		</div>
 	</footer>

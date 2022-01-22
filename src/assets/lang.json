@@ -1,7 +1,7 @@
 {
     "en": {
         "banner": "I'm Arnaud Le Floch.",
-        "description": "Full-stack JS Developer",
+        "description": "Front-end JS Developer",
         "home": "Home",
         "about": "About",
         "contact": "Contact",
@@ -29,7 +29,7 @@
     },
     "fr": {
         "banner": "Je suis Arnaud Le Floch.",
-        "description": "Développeur Full-stack JS",
+        "description": "Développeur Front-end JS",
         "home": "Accueil",
         "about": "À propos",
         "contact": "Contact",
