@@ -25,10 +25,7 @@
             "Geekzie was my first year internship lasting 4 months as a full-stack Ruby on rails developer, I had to realize multiple features, from the payment method to the automatic management of a calendar through a lot of code refactoring and a fully responsive website realization.",
             "Position in Full Stack Javascript Developer in the company Redpelicans in SSII, Training in the MERN stack and JS best practices, followed by a sending in company.",
             "Europ-assistance was my mission for Redpelicans, we had to manage a WebApp in NodeJS & ReactJS that allows you to call an assistance service in case of problem on the road with your vehicle, the web-app is used by many countries and is customizable according to the demand of the country."
-        ],
-        "submit": "Submit",
-        "send": "The message has been sent.",
-        "error": "A technical problem occurred. Please retry later."
+        ]
     },
     "fr": {
         "banner": "Je suis Arnaud Le Floch.",
@@ -56,31 +53,6 @@
             "Geekzie fut mon stage de première année d'une durée de 4 mois en tant que développeur full-stack Ruby on rails, j'ai dû réaliser de multiples fonctionnalités, de la méthode de paiement à la gestion automatique d'un agenda en passant par beaucoup de refactoring de code et une réalisation du site web entièrement responsive.",
             "Poste en Développeur Full Stack Javascript dans l'entreprise Redpelicans en SSII, Formation à la stack MERN et aux meilleures pratiques JS, suivi d'un envoi en entreprise.",
             "La société Europ-assistance a été ma mission pour Redpelicans, nous devions gérer une WebApp en NodeJS & ReactJS qui permet de faire appel à un service d'assistance en cas de problème sur la route avec votre véhicule, la web-app est utilisé par de nombreux pays et est personnalisable en fonction de la demande du pays."
-        ],
-        "submit": "Envoyer",
-        "send": "Le message a bien été envoyé.",
-        "error": "Un problème technique est survenu. Veuillez réessayer plus tard."
-    },
-    "ja": {
-        "banner": "私はアルノです.",
-        "description": "Full-stack JS Webエンジニア",
-        "home": "ホーム",
-        "about": "私について",
-        "experience": "職歴",
-        "contact": "お問い合わせ",
-        "resume": "私の履歴書",
-        "skills": "スキル",
-        "name": "名前",
-        "mail": "メール",
-        "message": "メッセージ",
-        "others": "他",
-        "tools": "ツール",
-        "development": "開発",
-        "hello": "こんにちは !",
-        "aboutText": [
-            "Passionate about the world of computer science since the age of 11, I chose to do my job in 2014 by becoming a developer with school 42. I acquired very good development skills, especially in web development, an area in which I specialized.",
-            "Being self-taught and hands-on, I never stop learning in any field, whether professionally or passionately.",
-            "If you have any questions, please do not hesitate to contact me. (my description in Japanese will wait I'm still a beginner.)"
         ]
     }
 }
