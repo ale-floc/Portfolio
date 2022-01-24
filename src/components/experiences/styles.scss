@@ -1,0 +1,22 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+#experiences {
+  background: $base-background-reverse;
+
+  @include media-max(500px) {
+    height: unset;
+  }
+
+  .wrapper-experiences {
+    width: 70%;
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+
+    @include media-max(900px) {
+      width: 95%;
+    }
+  }
+}

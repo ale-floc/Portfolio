@@ -1,0 +1,59 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+footer {
+  @include flexbox-center;
+  background: #252525;
+  color: white;
+  padding: 70px 0px 70px 0px;
+  position: relative;
+
+  .wrapper-footer {
+    @include flexbox-center;
+    flex-direction: column;
+
+    .icon-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 300px;
+
+      svg {
+        font-size: 40px !important;
+        color: #525252;
+        padding-bottom: 30px;
+      }
+
+      svg:hover {
+        transition: color 0.5s;
+        color: white;
+        cursor: pointer;
+      }
+    }
+
+    .copyright {
+      color: #525252;
+      font-size: 14px;
+      font-family: "opensans-regular", sans-serif;
+      font-weight: normal;
+    }
+  }
+
+  .scroll-top {
+    @include flexbox-center;
+    position: absolute;
+    top: -23px;
+    right: calc(50% - 20px);
+    font-size: 17px;
+    background: #4e4f50;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    cursor: pointer;
+
+    &:hover {
+      transition: all 0.2s ease-in-out;
+      background: #566e8a;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+#skills {
+  background: $base-background;
+
+  @include media-max(1000px) {
+    height: unset;
+  }
+
+  .container-skills {
+    margin-top: 20px;
+
+    @include media-max(1000px) {
+      width: 90%;
+    }
+
+    .skill-item {
+      flex-direction: column;
+      background: #242d38;
+      width: 100px;
+      font-family: $font-regular;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      margin: 0.4%;
+      padding: 8px;
+
+      @include media-max(500px) {
+        margin: 1%;
+      }
+    }
+
+    .wrapper-skills,
+    div {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin-bottom: 15px;
+
+      @include media-max(1000px) {
+        justify-content: center;
+      }
+
+      h2 {
+        font-family: $font-italic;
+        font-size: 1.2rem;
+      }
+
+      img {
+        width: 5%;
+        margin-left: 2%;
+        margin-right: 2%;
+        min-width: 40px;
+        max-width: 45px;
+        height: 50px;
+
+        @include media-max(500px) {
+          min-width: 30px;
+        }
+      }
+    }
+  }
+}

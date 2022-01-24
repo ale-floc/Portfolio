@@ -1,0 +1,79 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+#reverse {
+	flex-direction: row-reverse;
+	@include media-max(500px) {
+    flex-direction: column;
+	}
+}
+
+.experience {
+  display: flex;
+  height: 120px;
+  max-width: 1000px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+
+  @include media-max(500px) {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .paragraphly {
+    width: calc(100% - 120px);
+    background: #294550;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    font-family: "Quicksand-Italic";
+    font-size: 0.9rem;
+
+    @include media-max(500px) {
+      width: unset;
+    }
+  }
+
+  .company {
+    display: flex;
+    color: black;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    background: white;
+
+    @include media-max(500px) {
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      justify-content: space-around;
+    }
+
+    h3 {
+      font-family: "Quicksand-Italic";
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    #fortyTwo {
+      width: 65px;
+      padding: 15px 15px 10px 15px;
+    }
+
+    #geekzie {
+      width: 65px;
+      padding: 15px 15px 10px 15px;
+    }
+
+    #redpelicans {
+      width: 65px;
+      padding: 15px 15px 10px 10px;
+    }
+
+    #europAssistance {
+      width: 80px;
+      font-size: 3em;
+      padding: 15px 5px 10px 5px;
+    }
+  }
+}

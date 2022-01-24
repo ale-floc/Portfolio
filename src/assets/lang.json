@@ -17,8 +17,9 @@
         "hello": "Hello !",
         "aboutText": [
             "Passionate about the world of computer science since the age of 11, I chose to do my job in 2014 by becoming a developer with school 42. I acquired very good development skills, especially in web development, an area in which I specialized.",
-            "Being self-taught and hands-on, I never stop learning in any field, whether professionally or passionately.",
-            "You can find my skills and experience below, if you have any questions, please do not hesitate to contact me."
+            "Being autonomous and self-taught, I am always ready to learn, be it professionally or passionately on various subjects.",
+            "You can find my skills and experiences, i hope you will find my profile interesting.",
+            "Do not hesitate to contact me, I am at your disposal for more information."
         ],
         "company": [
             "I attended School 42 in August 2014, there I learned the basics of programming with the C language and the use of git. After that I started web development and gained skills in CSS, JS, JQUERY, PHP, MYSQL, NodeJS and Ruby on rails using them in many projects.",
@@ -45,8 +46,9 @@
         "hello": "Bonjour !",
         "aboutText": [
             "Passionné par le monde de l'informatique depuis l'âge de 11 ans, j’ai choisi d'en faire mon métier en 2014 en devenant développeur avec l'école 42. J'y ai acquis de très bonnes compétences en développement, surtout dans le développement web, domaine dans lequel je me suis spécialisé.",
-            "Étant autodidacte et touche-à-tout, je ne cesse d’apprendre dans n'importe quel domaine que ce soit professionnellement ou passionnément.",
-            "Si vous avez des questions, n'hésitez pas à me contacter."
+            "Autonome et autodidacte, je suis toujours prêt à apprendre, que ce soit professionnellement ou passionnément sur des sujets variés.",
+            "Vous pouvez trouver mes compétences et mes expériences, j'espère que vous trouverez mon profil intéressant.",
+            "N'hésitez pas à me contacter, je suis à votre disposition pour plus d'informations."
         ],
         "company": [
             "J'ai participé à l'école 42 en août 2014, j'y ai appris la base de la programmation avec le langage C et l'utilisation de git. Par la suite j'ai commencé le développement web et j'ai acquis des compétences en CSS, JS, JQUERY, PHP, MYSQL, NodeJS et Ruby on rails en les utilisant dans de nombreux projets.",

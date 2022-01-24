@@ -1,0 +1,35 @@
+@import "./variables";
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+#element::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html, body {
+  font-family: $font-regular;
+  font-size: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  color: white;
+  background: #252525;
+  margin: 0;
+  padding: 0;
+  animation: block-overflow 2s;
+  height: 100%;
+  width: 100%;
+}

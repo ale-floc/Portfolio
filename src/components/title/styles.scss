@@ -1,0 +1,51 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.title-fade {
+  animation: fadeInLeft 1s ease-in-out forwards;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-family: "Poppins-Light";
+  position: relative;
+  letter-spacing: 5px;
+
+  @include media-max(500px) {
+    padding-top: 60px !important;
+    font-size: 1.3rem !important;
+  }
+
+  @include media-max(1000px) {
+    padding-top: 80px;
+
+    &:before,
+    &:after {
+      top: 82% !important;
+    }
+  }
+
+  &:before,
+  &:after {
+    content: "";
+    height: 2px;
+    position: absolute;
+    width: 0%;
+    background-color: #a32039;
+    top: 20px;
+  }
+
+  &:before {
+    margin-left: -110px;
+    animation: lineAnim 0.5s ease-in forwards;
+    animation-delay: 0.9s;
+  }
+
+  &:after {
+    margin-left: 27px;
+    animation: lineAnim 1s ease-out forwards;
+    animation-delay: 1.5s;
+  }
+}

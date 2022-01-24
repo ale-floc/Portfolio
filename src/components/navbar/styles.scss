@@ -1,0 +1,75 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.navBackground {
+  background: #252525;
+  transition: all 0.5s;
+}
+
+nav:not(.button-scroll-reponsive) {
+  font-size: 0.8rem;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  z-index: 2;
+  position: fixed;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  visibility: hidden;
+
+  @include media-max(1000px) {
+    visibility: hidden !important;
+  }
+
+  @include media-min(1000px) {
+    animation: opacity-anim 1.5s linear forwards;
+    animation-delay: 2s;
+  }
+
+  .flag {
+    width: 45px;
+    height: 25px;
+    padding-left: 25px;
+    cursor: pointer;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-right: 70px;
+
+    li {
+      margin: 0px 30px 0px 30px;
+      cursor: pointer;
+      font-family: $font-regular;
+      position: relative;
+    }
+
+    li:hover {
+      transition: transform 0.2s ease-in-out;
+      transform: scale(1.1);
+    }
+
+    .nav-active {
+      color: #65b4ff;
+
+      &:after {
+        content: "";
+        display: block;
+        width: 8px;
+        height: 8px;
+        position: absolute;
+        top: 20px;
+        left: calc(50% - 5px);
+        background: #65b4ff;
+        border-radius: 500px;
+      }
+    }
+  }
+}
