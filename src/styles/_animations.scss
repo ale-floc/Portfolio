@@ -1,28 +1,4 @@
-@mixin keyframes($animation-name) {
-  @-webkit-keyframes #{$animation-name} {
-    @content;
-  }
-  @-moz-keyframes #{$animation-name} {
-    @content;
-  }
-  @-ms-keyframes #{$animation-name} {
-    @content;
-  }
-  @-o-keyframes #{$animation-name} {
-    @content;
-  }
-  @keyframes #{$animation-name} {
-    @content;
-  }
-}
-
-@mixin animation($str) {
-  -webkit-animation: #{$str};
-  -moz-animation: #{$str};
-  -ms-animation: #{$str};
-  -o-animation: #{$str};
-  animation: #{$str};
-}
+@import "./mixins";
 
 @include keyframes(banner-anim) {
   from {
@@ -47,7 +23,7 @@
   }
 }
 
-@keyframes opacity-anim {
+@include keyframes(opacity-anim) {
   from {
     opacity: 0;
   }
@@ -58,7 +34,7 @@
   }
 }
 
-@keyframes button-scroll-anim {
+@include keyframes(button-scroll-anim) {
   0% {
     transform: translateY(10px);
   }
@@ -72,7 +48,7 @@
   }
 }
 
-@keyframes rotate-plane {
+@include keyframes(rotate-plane) {
   0% {
     transform: rotate(-90deg);
   }
@@ -82,7 +58,7 @@
   }
 }
 
-@keyframes rotate-earth {
+@include keyframes(rotate-earth) {
   from {
     transform: rotate(0deg);
   }
@@ -92,7 +68,7 @@
   }
 }
 
-@keyframes earth-appear-anim {
+@include keyframes(earth-appear-anim) {
   from {
     opacity: 0;
   }
@@ -102,7 +78,7 @@
   }
 }
 
-@keyframes fadeInLeft {
+@include keyframes(fadeInLeft) {
   0% {
      opacity: 0;
      transform: translate(-100px, 0%);
@@ -113,7 +89,7 @@
   }
 }
 
-@keyframes rotateY {
+@include keyframes(rotateY) {
   0% {
     opacity: 0;
     transform: rotate3d(1, 1, 1, 15deg)
@@ -124,11 +100,39 @@
   }
 }
 
-@keyframes lineAnim {
+@include keyframes(lineAnim) {
   0% {
     width: 0px;
   }
   100% {
     width: 80px;
+  }
+}
+
+@include keyframes(rotateIcon) {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-90deg);
+  }
+}
+
+@include keyframes(rotateIconReverse) {
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@include keyframes(toggle-menu) {
+  0% {
+    right: 100%;
+  }
+  100% {
+    right: 50%;
+    display: flex;
   }
 }

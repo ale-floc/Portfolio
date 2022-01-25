@@ -2,14 +2,14 @@
 @import "../../styles/mixins";
 
 footer {
-  @include flexbox-center;
+  @include flex-center;
   background: #252525;
   color: white;
   padding: 70px 0px 70px 0px;
   position: relative;
 
   .wrapper-footer {
-    @include flexbox-center;
+    @include flex-center;
     flex-direction: column;
 
     .icon-footer {
@@ -19,8 +19,8 @@ footer {
       width: 300px;
 
       svg {
-        font-size: 40px !important;
-        color: #525252;
+        font-size: 2.5rem;
+        color: #7c7c7c;
         padding-bottom: 30px;
       }
 
@@ -32,19 +32,17 @@ footer {
     }
 
     .copyright {
-      color: #525252;
-      font-size: 14px;
-      font-family: "opensans-regular", sans-serif;
-      font-weight: normal;
+      color: #7c7c7c;
+      font-size: 1rem;
     }
   }
 
   .scroll-top {
-    @include flexbox-center;
+    @include flex-center;
     position: absolute;
     top: -23px;
     right: calc(50% - 20px);
-    font-size: 17px;
+    font-size: 1rem;
     background: #4e4f50;
     width: 45px;
     height: 45px;

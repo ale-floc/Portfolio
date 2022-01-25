@@ -16,7 +16,7 @@ const Home = ({ language }) => (
     </a>
     <Earth />
     <Link activeClass="active" to="about" spy={true} smooth={true} duration={1000} >
-      <div className="button-scroll-reponsive" onClick={() => animateScroll.scrollToTop()}>
+      <div className="scroll-down" onClick={() => animateScroll.scrollToTop()}>
         <DownOutlined />
       </div>
     </Link>

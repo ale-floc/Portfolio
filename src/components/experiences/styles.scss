@@ -3,19 +3,19 @@
 
 #experiences {
   background: $base-background-reverse;
+  padding-bottom: 25px;
 
-  @include media-max(500px) {
+  @include responsive(mobile) {
     height: unset;
   }
 
   .wrapper-experiences {
+    @include flex-center-column;
     width: 70%;
-    display: flex;
     margin-top: 50px;
-    flex-direction: column;
-    align-items: center;
+    
 
-    @include media-max(900px) {
+    @include responsive(tablet) {
       width: 95%;
     }
   }

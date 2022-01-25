@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { ReactSVG } from 'react-svg';
 import classNames from 'classnames';
-import earth from '../assets/img/earth.svg';
+import earth from '../../assets/img/earth.svg';
+import './styles.scss';
 
 const Earth = () => {
 	const [scroll, setScroll] = useState(0);
@@ -12,7 +13,7 @@ const Earth = () => {
 	}, []);
 
 	return (
-		<div className={classNames('container-earth', { displayNone: scroll > 450 })} style={{ transform: `translateY(calc(100px + ${scroll * 2}px))` }}>
+		<div className={classNames('container-earth', { "earth-hidden": scroll > 450 })} style={{ transform: `translateY(calc(100px + ${scroll * 2}px))` }}>
 			<ReactSVG className="earth" src={earth} />
 		</div>
 	);

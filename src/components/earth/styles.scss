@@ -1,0 +1,35 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.container-earth {
+  @include animation('earth-appear-anim 1s');
+  width: 100%;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+
+  @include responsive(tablet) {
+    display: none;
+  }
+
+  &.earth-hidden {
+    display: none;
+  }
+
+  .earth {
+    z-index: 1;
+    position: fixed;
+    width: 80%;
+
+    g[id^="earth"] {
+      @include animation('rotate-earth 100s linear infinite forwards');
+      transform-origin: center;
+    }
+
+    g[id^="plane"] {
+      @include animation('rotate-plane 20s linear infinite');
+      transform-origin: center;
+    }
+  }
+}

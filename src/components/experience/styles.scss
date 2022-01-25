@@ -1,36 +1,42 @@
 @import '../../styles/variables';
 @import '../../styles/mixins';
 
-#reverse {
-	flex-direction: row-reverse;
-	@include media-max(500px) {
-    flex-direction: column;
-	}
-}
-
 .experience {
   display: flex;
-  height: 120px;
+  height: 130px;
   max-width: 1000px;
-  margin-bottom: 20px;
-  border-radius: 5px;
+  min-width: 1000px;
+  margin-bottom: 15px;
 
-  @include media-max(500px) {
+  @include responsive(tablet) {
+    max-width: unset;
+    min-width: unset;
+  }
+
+  @include responsive(mobile) {
     flex-direction: column;
     height: auto;
   }
 
+  &#reverse {
+    flex-direction: row-reverse;
+
+    @include responsive(mobile) {
+      flex-direction: column;
+    }
+  }
+
   .paragraphly {
     width: calc(100% - 120px);
-    background: #294550;
-    padding: 20px;
+    background: #243150;
+    padding: 15px;
     display: flex;
     align-items: center;
-    font-family: "Quicksand-Italic";
-    font-size: 0.9rem;
+    font-family: $font-ultra-light;
+    font-size: 0.86rem;
 
-    @include media-max(500px) {
-      width: unset;
+    @include responsive(mobile) {
+      width: auto;
     }
   }
 
@@ -42,17 +48,14 @@
     width: 120px;
     background: white;
 
-    @include media-max(500px) {
+    @include responsive(mobile) {
       flex-direction: row;
-      align-items: center;
       width: 100%;
       justify-content: space-around;
     }
 
     h3 {
-      font-family: "Quicksand-Italic";
       margin: 0;
-      font-size: 1rem;
     }
 
     #fortyTwo {

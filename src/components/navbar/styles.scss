@@ -7,6 +7,8 @@
 }
 
 nav:not(.button-scroll-reponsive) {
+  @include animation('opacity-anim 1.5s linear forwards');
+  animation-delay: 2s;
   font-size: 0.8rem;
   width: 100%;
   text-transform: uppercase;
@@ -18,13 +20,25 @@ nav:not(.button-scroll-reponsive) {
   align-items: center;
   visibility: hidden;
 
-  @include media-max(1000px) {
-    visibility: hidden !important;
+  @include responsive(mobile) {
+    height: 50px;
+    justify-content: space-between;
+    background: #252525;
   }
 
-  @include media-min(1000px) {
-    animation: opacity-anim 1.5s linear forwards;
-    animation-delay: 2s;
+  .menuResponsive {
+    @include animation('rotateIconReverse 0.2s linear forwards');
+    margin: 0px 20px;
+    font-size: 1.5rem;
+    display: none;
+
+    @include responsive(mobile) {
+      display: flex;
+    }
+
+    &.toggleMenu {
+      @include animation('rotateIcon 0.2s linear forwards');
+    }
   }
 
   .flag {
@@ -32,43 +46,84 @@ nav:not(.button-scroll-reponsive) {
     height: 25px;
     padding-left: 25px;
     cursor: pointer;
+
+    @include responsive(mobile) {
+      padding-left: 15px;
+      width: 35px;
+      height: 25px;
+    }
   }
 
   ul {
+    @include flex-center;
     padding: 0;
     margin: 0;
     list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     padding-right: 70px;
+
+    &.toggleMenu {
+      @include animation('toggle-menu 0.5s forwards');
+      position: absolute;
+      background: #252525;
+      height: 100vh;
+      top: 50px;
+      flex-flow: column;
+      width: 50%;
+      align-items: start;
+      display: flex;
+      justify-content: start;
+      padding-top: 25px;
+    }
+
+    @include responsive(mobile) {
+      padding-right: 0px;
+      display: none;
+    }
 
     li {
       margin: 0px 30px 0px 30px;
       cursor: pointer;
       font-family: $font-regular;
       position: relative;
-    }
 
-    li:hover {
-      transition: transform 0.2s ease-in-out;
-      transform: scale(1.1);
-    }
+      @include responsive(mobile) {
+        width: 100%;
+        cursor: pointer;
+        position: relative;
+        font-size: 1rem;
+        padding: 25px 20px;
+        margin: 0;
 
-    .nav-active {
-      color: #65b4ff;
+        &:hover {
+          transition: none !important;
+          transform: none !important;
+        }
+      }
 
-      &:after {
-        content: "";
-        display: block;
-        width: 8px;
-        height: 8px;
-        position: absolute;
-        top: 20px;
-        left: calc(50% - 5px);
-        background: #65b4ff;
-        border-radius: 500px;
+      &.nav-active {
+        color: #65b4ff;
+  
+        &:after {
+          content: "";
+          display: block;
+          width: 8px;
+          height: 8px;
+          position: absolute;
+          top: 20px;
+          left: calc(50% - 5px);
+          background: #65b4ff;
+          border-radius: 500px;
+  
+          @include responsive(mobile) {
+            content: none;
+          }
+        }
+      }
+
+      &:hover {
+        transition: transform 0.2s ease-in-out;
+        transform: scale(1.1);
       }
     }
   }

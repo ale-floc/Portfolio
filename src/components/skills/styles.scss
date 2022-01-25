@@ -4,29 +4,22 @@
 #skills {
   background: $base-background;
 
-  @include media-max(1000px) {
-    height: unset;
-  }
-
   .container-skills {
     margin-top: 20px;
-
-    @include media-max(1000px) {
-      width: 90%;
-    }
 
     .skill-item {
       flex-direction: column;
       background: #242d38;
       width: 100px;
       font-family: $font-regular;
-      border-radius: 5px;
+      border-radius: 3px;
       font-size: 0.9rem;
       margin: 0.4%;
       padding: 8px;
 
-      @include media-max(500px) {
-        margin: 1%;
+      @include responsive(mobile) {
+        margin: 1px;
+        padding: 3px;
       }
     }
 
@@ -38,7 +31,7 @@
       max-width: 1000px;
       margin-bottom: 15px;
 
-      @include media-max(1000px) {
+      @include responsive(tablet) {
         justify-content: center;
       }
 
@@ -55,8 +48,8 @@
         max-width: 45px;
         height: 50px;
 
-        @include media-max(500px) {
-          min-width: 30px;
+        @include responsive(mobile) {
+          min-width: 40px;
         }
       }
     }

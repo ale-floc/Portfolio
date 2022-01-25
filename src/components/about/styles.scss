@@ -5,12 +5,10 @@
   background: $base-background-reverse;
 
   .wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
     margin: 75px 0px;
 
-    @include media-max(1000px) {
+    @include responsive(tablet) {
       flex-direction: column;
       margin-top: 20px;
     }
@@ -20,28 +18,40 @@
       height: 300px;
       margin: 10px;
 
-      @include media-max(1000px) {
+      @include responsive(tablet) {
         width: 200px;
         height: auto;
         margin-top: 20px;
+      }
+      @include responsive(mobile) {
+        width: 150px;
+        height: auto;
       }
     }
 
     .paragraphly {
       width: 50%;
-      font-family: "Montserrat-Thin";
+      font-family: $font-ultra-light;
       line-height: 25px;
       font-size: 0.95rem;
       background: #242d38;
-      padding: 25px;
+      padding: 30px;
       margin: 15px;
       letter-spacing: 1px;
+      border-radius: 2px;
+      box-shadow: 10px 10px 5px #161f2b;
 
-      @include media-max(1000px) {
-        font-family: "Montserrat-Thin";
+      @include responsive(tablet) {
         line-height: 20px;
         width: 70%;
         font-size: 0.9rem;
+      }
+
+      @include responsive(mobile) {
+        line-height: 16px;
+        width: 85%;
+        font-size: 0.8rem;
+        padding: 15px;
       }
     }
   }
