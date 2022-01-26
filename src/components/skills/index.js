@@ -5,7 +5,6 @@ import javascript from '../../assets/img/skills/javascript.svg';
 import html from '../../assets/img/skills/html.svg';
 import react from '../../assets/img/skills/react.svg';
 import sass from '../../assets/img/skills/sass.svg';
-import php from '../../assets/img/skills/php.svg';
 import nodejs from '../../assets/img/skills/nodejs.svg';
 import bootstrap from '../../assets/img/skills/bootstrap.svg';
 import jquery from '../../assets/img/skills/jquery.svg';
@@ -48,7 +47,6 @@ const Skills = ({ language }) => (
 					<SkillsItem id="redux" src={redux} title="Redux" />
 					<SkillsItem id="nodejs" src={nodejs} title="NodeJS" />
 					<SkillsItem id="sass" src={sass} title="Sass" />
-					<SkillsItem id="php" src={php} title="PHP" />
 					<SkillsItem id="mongodb" src={mongodb} title="MongoDB" />
 					<SkillsItem id="mysql" src={mysql} title="MYSQL" />
 					<SkillsItem id="bootstrap" src={bootstrap} title="Bootstrap" />
