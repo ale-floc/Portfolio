@@ -19,7 +19,7 @@ const Navbar = () => {
 		window.addEventListener('scroll', handleScroll);
 		window.addEventListener('resize', () => setActive(false));
 	}, []);
-	console.log(scroll)
+
 	return (
 		<nav className={classNames({ navBackground: scroll > 200 })}>
 			<img className='flag' src={changeFlag()} onClick={toggleLanguage} />

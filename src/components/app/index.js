@@ -11,12 +11,12 @@ export const LanguageContext = React.createContext();
 
 const App = () => {
   const [language, setLanguage] = useState('en');
-	const toggleLanguage = () => setLanguage(l => l === 'en' ? 'fr' : 'en');
+  const toggleLanguage = () => setLanguage(l => l === 'en' ? 'fr' : 'en');
 
   useEffect(() => {
     if ('scrollRestoration' in window.history)
       window.history.scrollRestoration = 'manual'
-	}, []);
+  }, []);
 
   return (
     <div className="App">
