@@ -7,9 +7,12 @@ import Experiences from '../experiences';
 import Navbar from '../navbar';
 import './styles.scss';
 
+export const LanguageContext = React.createContext();
+
 const App = () => {
   const [language, setLanguage] = useState('en');
-	
+	const toggleLanguage = () => setLanguage(l => l === 'en' ? 'fr' : 'en');
+
   useEffect(() => {
     if ('scrollRestoration' in window.history)
       window.history.scrollRestoration = 'manual'
@@ -17,12 +20,14 @@ const App = () => {
 
   return (
     <div className="App">
-      <Navbar language={language} setLanguage={setLanguage} />
-      <Home language={language} />
-      <About language={language} />
-      <Skills language={language} />
-      <Experiences language={language} />
-      <Footer />
+      <LanguageContext.Provider value={{ language, toggleLanguage }}>
+        <Navbar />
+        <Home />
+        <About />
+        <Skills />
+        <Experiences />
+        <Footer />
+      </LanguageContext.Provider>
     </div>
   );
 }
