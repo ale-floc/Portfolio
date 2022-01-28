@@ -13,9 +13,11 @@ const Earth = () => {
 	}, []);
 
 	return (
-		<div className={classNames('container-earth', { "earth-hidden": scroll > 450 })} style={{ transform: `translateY(calc(100px + ${scroll * 2}px))` }}>
-			<ReactSVG className="earth" src={earth} />
-		</div>
+		scroll < 450 && (
+			<div className="container-earth" style={{ transform: `translateY(calc(100px + ${scroll * 2}px))` }}>
+				<ReactSVG className="earth" src={earth} />
+			</div>
+		)
 	);
 };
 
