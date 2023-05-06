@@ -26,8 +26,10 @@ import photoshop from '../../assets/img/skills/photoshop.svg';
 import webpack from '../../assets/img/skills/webpack.svg';
 import ec2 from '../../assets/img/skills/ec2.svg';
 import s3 from '../../assets/img/skills/s3.svg';
-import jenkins from '../../assets/img/skills/jenkins.png';
-import redux from '../../assets/img/skills/redux.svg';
+import nextjs from '../../assets/img/skills/nextjs.svg';
+import tailwind from '../../assets/img/skills/tailwind.svg';
+import python from '../../assets/img/skills/python.svg';
+import chatgpt from '../../assets/img/skills/chatgpt.svg';
 import Title from '../title';
 import { LanguageContext } from '../app';
 import SkillsItem from './skillsItem';
@@ -47,11 +49,13 @@ const Skills = () => {
 						<SkillsItem id="javascript" src={javascript} title="Javascript" />
 						<SkillsItem id="jquery" src={jquery} title="Jquery" />
 						<SkillsItem id="react" src={react} title="ReactJS" />
-						<SkillsItem id="redux" src={redux} title="Redux" />
+						<SkillsItem id="nextjs" src={nextjs} title="NextJS" />
 						<SkillsItem id="nodejs" src={nodejs} title="NodeJS" />
+						<SkillsItem id="python" src={python} title="Python" />
 						<SkillsItem id="sass" src={sass} title="Sass" />
 						<SkillsItem id="mongodb" src={mongodb} title="MongoDB" />
 						<SkillsItem id="mysql" src={mysql} title="MYSQL" />
+						<SkillsItem id="tailwind" src={tailwind} title="Tailwind" />
 						<SkillsItem id="bootstrap" src={bootstrap} title="Bootstrap" />
 						<SkillsItem id="antd" src={antd} title="Antd" />
 						<SkillsItem id="materialui" src={materialui} title="Material-UI" />
@@ -67,7 +71,6 @@ const Skills = () => {
 						<SkillsItem id="docker" src={docker} title="Docker" />
 						<SkillsItem id="ansible" src={ansible} title="Ansible" />
 						<SkillsItem id="terraform" src={terraform} title="Terraform" />
-						<SkillsItem id="jenkins" src={jenkins} title="Jenkins" />
 						<SkillsItem id="postman" src={postman} title="Postman" />
 						<SkillsItem id="illustrator" src={illustrator} title="Illustrator" />
 						<SkillsItem id="photoshop" src={photoshop} title="Photoshop" />
@@ -75,6 +78,7 @@ const Skills = () => {
 						<SkillsItem id="premierePro" src={premierePro} title="Premiere Pro" />
 						<SkillsItem id="ec2" src={ec2} title="EC2" />
 						<SkillsItem id="s3" src={s3} title="S3" />
+						<SkillsItem id="chatgpt" src={chatgpt} title="ChatGPT" />
 					</div>
 				</div>
 			</div>

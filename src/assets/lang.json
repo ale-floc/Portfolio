@@ -1,7 +1,7 @@
 {
     "en": {
         "banner": "I'm Arnaud Le Floch.",
-        "description": "Front-end JS Developer",
+        "description": "Full Stack Developer",
         "home": "Home",
         "about": "About",
         "contact": "Contact",
@@ -16,21 +16,22 @@
         "development": "Development",
         "hello": "Hello !",
         "aboutText": [
-            "Passionate about the world of computer science since the age of 11, I chose to do my job in 2014 by becoming a developer with school 42. I acquired very good development skills, especially in web development, an area in which I specialized.",
-            "Being autonomous and self-taught, I am always ready to learn, be it professionally or passionately on various subjects.",
-            "You can find my skills and experiences, i hope you will find my profile interesting.",
-            "Do not hesitate to contact me, I am at your disposal for more information."
+            "Passionate about the world of computer science since the age of 11, I made it my profession in 2014 by becoming a developer through the school 42. I have gained strong skills in development, particularly in web development, which is the field I specialize in.",
+            "Being autonomous and self-taught, I am always eager to learn, whether it's professionally or passionately about various subjects.",
+            "You can find my skills and experiences, and I hope you find my profile interesting. Please feel free to contact me for more information.",
+            "I am available and ready to answer your questions."
         ],
         "company": [
             "I attended School 42 in August 2014, there I learned the basics of programming with the C language and the use of git. After that I started web development and gained skills in CSS, JS, JQUERY, PHP, MYSQL, NodeJS and Ruby on rails using them in many projects.",
             "Geekzie was my first year internship lasting 4 months as a full-stack Ruby on rails developer, I had to realize multiple features, from the payment method to the automatic management of a calendar through a lot of code refactoring and a fully responsive website realization.",
-            "Position in Full Stack Javascript Developer in the company Redpelicans in SSII, Training in the MERN stack and JS best practices, followed by a sending in company.",
-            "Europ-assistance was my mission for Redpelicans, we had to manage a WebApp in NodeJS & ReactJS that allows you to call an assistance service in case of problem on the road with your vehicle, the web-app is used by many countries and is customizable according to the demand of the country."
+            "I held the position of Full Stack JavaScript Developer at Redpelicans, an IT consulting firm. I underwent training on the MERN stack (MongoDB, Express.js, React.js, Node.js) as well as best practices in JavaScript development. Following my training, I was assigned to a project within a company.",
+            "Europ-assistance was my mission for Redpelicans, we had to manage a WebApp in NodeJS & ReactJS that allows you to call an assistance service in case of problem on the road with your vehicle, the web-app is used by many countries and is customizable according to the demand of the country.",
+            "La Route des Golfs was the company I worked for as a Full Stack developer, utilizing Next.js and Laravel. It was a marketplace website dedicated to golf, designed in collaboration with regional tourism committees representing various regions, with a focus on the golf industry."
         ]
     },
     "fr": {
         "banner": "Je suis Arnaud Le Floch.",
-        "description": "Développeur Front-end JS",
+        "description": "Développeur Full Stack",
         "home": "Accueil",
         "about": "À propos",
         "contact": "Contact",
@@ -45,16 +46,17 @@
         "development": "Développement",
         "hello": "Bonjour !",
         "aboutText": [
-            "Passionné par le monde de l'informatique depuis l'âge de 11 ans, j’ai choisi d'en faire mon métier en 2014 en devenant développeur avec l'école 42. J'y ai acquis de très bonnes compétences en développement, surtout dans le développement web, domaine dans lequel je me suis spécialisé.",
-            "Autonome et autodidacte, je suis toujours prêt à apprendre, que ce soit professionnellement ou passionnément sur des sujets variés.",
-            "Vous pouvez trouver mes compétences et mes expériences, j'espère que vous trouverez mon profil intéressant.",
-            "N'hésitez pas à me contacter, je suis à votre disposition pour plus d'informations."
+            "Je suis passionné par l'informatique depuis l'âge de 11 ans et j'ai choisi d'en faire ma carrière en devenant développeur en 2014 grâce à l'école 42. J'ai développé de solides compétences en programmation, en particulier dans le domaine du développement web, où je me suis spécialisé.",
+            "Je suis quelqu'un d'autonome et d'autodidacte, toujours avide d'apprendre, que ce soit dans un contexte professionnel ou par pur intérêt personnel sur des sujets variés.",
+            "Vous pouvez consulter mes compétences et mes expériences pour en savoir plus sur mon profil. J'espère que vous trouverez mon parcours intéressant. N'hésitez pas à me contacter si vous souhaitez obtenir plus d'informations.",
+            "Je suis disponible et prêt à répondre à vos questions."
         ],
         "company": [
             "J'ai participé à l'école 42 en août 2014, j'y ai appris la base de la programmation avec le langage C et l'utilisation de git. Par la suite j'ai commencé le développement web et j'ai acquis des compétences en CSS, JS, JQUERY, PHP, MYSQL, NodeJS et Ruby on rails en les utilisant dans de nombreux projets.",
             "Geekzie fut mon stage de première année d'une durée de 4 mois en tant que développeur full-stack Ruby on rails, j'ai dû réaliser de multiples fonctionnalités, de la méthode de paiement à la gestion automatique d'un agenda en passant par beaucoup de refactoring de code et une réalisation du site web entièrement responsive.",
-            "Poste en Développeur Full Stack Javascript dans l'entreprise Redpelicans en SSII, Formation à la stack MERN et aux meilleures pratiques JS, suivi d'un envoi en entreprise.",
-            "La société Europ-assistance a été ma mission pour Redpelicans, nous devions gérer une WebApp en NodeJS & ReactJS qui permet de faire appel à un service d'assistance en cas de problème sur la route avec votre véhicule, la web-app est utilisé par de nombreux pays et est personnalisable en fonction de la demande du pays."
+            "J'ai occupé le poste de développeur Full Stack Javascript chez Redpelicans, une SSII. J'ai suivi une formation sur la stack MERN (MongoDB, Express.js, React.js, Node.js) ainsi que sur les meilleures pratiques de développement en JavaScript. Après ma formation, j'ai été affecté à un projet au sein d'une entreprise.",
+            "La société Europ-assistance a été ma mission pour Redpelicans, nous devions gérer une WebApp en NodeJS & ReactJS qui permet de faire appel à un service d'assistance en cas de problème sur la route avec votre véhicule, la web-app est utilisé par de nombreux pays et est personnalisable en fonction de la demande du pays.",
+            "La Route des Golfs était l'entreprise pour laquelle j'ai travaillé en tant que développeur Full Stack, utilisant Next.js, Laravel. Il s'agis d'un site de type marketplace pour le golf, conçu en collaboration avec les comités régionaux de tourisme, représentant différentes régions, et axé sur l'industrie du golf."
         ]
     }
 }

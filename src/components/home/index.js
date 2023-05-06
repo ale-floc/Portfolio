@@ -14,7 +14,7 @@ const Home = () => {
         <h1>{translation[language].banner}</h1>
         <h3>{translation[language].description}</h3>
       </div>
-      <a href="https://drive.google.com/file/d/1kxHVv8Ha2itdCxSksbveURUFErHr_XLn/view?usp=sharing" rel="noopener noreferrer" target="_blank">
+      <a href="https://drive.google.com/file/d/1aXoud3AYXz0InFr-_jj2dWnbfJFgvjtJ/view?usp=sharing" rel="noopener noreferrer" target="_blank">
         <input type="button" value={translation[language].resume} />
       </a>
       <Earth />
