@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { ReactSVG } from 'react-svg';
-import classNames from 'classnames';
 import earth from '../../assets/img/earth.svg';
 import './styles.scss';
 
